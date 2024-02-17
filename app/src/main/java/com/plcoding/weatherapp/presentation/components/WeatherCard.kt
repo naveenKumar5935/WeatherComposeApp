@@ -1,7 +1,6 @@
 package com.plcoding.weatherapp.presentation.components
 
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -14,9 +13,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Card
 import androidx.compose.material.Icon
-import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
-import androidx.compose.material.icons.Icons
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -73,6 +70,7 @@ fun WeatherCard() {
                 horizontalArrangement = Arrangement.SpaceEvenly,
                 modifier = Modifier.fillMaxWidth()
                     .padding(10.dp)) {
+
                 Humidity(R.drawable.ic_pressure, "1014hpa")
                 Humidity(R.drawable.ic_drop, "30%")
                 Humidity(R.drawable.ic_wind,"14km/h")

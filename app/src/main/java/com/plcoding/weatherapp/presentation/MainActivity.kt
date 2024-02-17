@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import com.plcoding.weatherapp.presentation.components.WeatherCard
+import com.plcoding.weatherapp.presentation.components.WeeklyWeatherCard
 import com.plcoding.weatherapp.presentation.ui.theme.DeepBlue
 import com.plcoding.weatherapp.presentation.ui.theme.WeatherAppTheme
 
@@ -20,10 +21,12 @@ class MainActivity : ComponentActivity() {
             WeatherAppTheme {
                 Column(
                     horizontalAlignment = Alignment.CenterHorizontally,
-                    modifier = Modifier.fillMaxSize()
+                    modifier = Modifier
+                        .fillMaxSize()
                         .background(DeepBlue)
                 ) {
                     WeatherCard()
+                    WeeklyWeatherCard()
                 }
 
             }
